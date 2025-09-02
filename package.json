@@ -1,0 +1,22 @@
+{
+  "name": "kiddle-dental-clinic",
+  "version": "1.0.0",
+  "description": "Kiddle Dental Clinic and Implant Centre Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run server & npm run client",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "dental",
+    "clinic",
+    "react",
+    "node",
+    "express"
+  ],
+  "author": "Kiddle Dental Clinic",
+  "license": "MIT"
+}
