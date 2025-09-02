@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCalendarAlt, FaClock, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaCalendarAlt, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Appointments = () => {
   return (

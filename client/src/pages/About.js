@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUserMd, FaGraduationCap, FaAward, FaHeart, FaShieldAlt } from 'react-icons/fa';
+import { FaGraduationCap, FaAward, FaHeart, FaShieldAlt } from 'react-icons/fa';
 
 const About = () => {
   return (
