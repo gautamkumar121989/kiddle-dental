@@ -26,11 +26,33 @@ const Services = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Service Image 1 - Root Canal Treatment */}
+            {/* Service Image 1 - Treatment of Gum Diseases */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="relative h-48 bg-gray-100">
                 <img 
-                  src="/images/services/rootcanal.jpg" 
+                  src="/images/services/service-1.jpg" 
+                  alt="Treatment of Gum Diseases - Periodontal care"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="hidden w-full h-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
+                  <FaTooth className="text-white text-4xl opacity-80" />
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-800 mb-2">TREATMENT OF GUM DISEASES</h3>
+                <p className="text-gray-600 text-sm">Advanced periodontal treatments</p>
+              </div>
+            </div>
+
+            {/* Service Image 2 - Root Canal Treatment */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="relative h-48 bg-gray-100">
+                <img 
+                  src="/images/services/service-2.jpeg" 
                   alt="Root Canal Treatment - Advanced endodontic procedure"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -48,11 +70,11 @@ const Services = () => {
               </div>
             </div>
 
-            {/* Service Image 2 - Crown & Bridge */}
+            {/* Service Image 3 - Crown & Bridge */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="relative h-48 bg-gray-100">
                 <img 
-                  src="/images/services/service-2.jpeg" 
+                  src="/images/services/service-3.jpeg" 
                   alt="Crown & Bridge Treatment - Custom dental restorations"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -70,55 +92,11 @@ const Services = () => {
               </div>
             </div>
 
-            {/* Service Image 3 - Child Dentistry */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="relative h-48 bg-gray-100">
-                <img 
-                  src="/images/services/service-3.jpeg" 
-                  alt="Child Dentistry - Pediatric dental care"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-                <div className="hidden w-full h-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
-                  <FaTooth className="text-white text-4xl opacity-80" />
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-gray-800 mb-2">CHILD DENTISTRY</h3>
-                <p className="text-gray-600 text-sm">Gentle dental care for children</p>
-              </div>
-            </div>
-
-            {/* Service Image 4 - Dental Implant */}
+            {/* Service Image 4 - Cosmetic Dentistry */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="relative h-48 bg-gray-100">
                 <img 
                   src="/images/services/service-4.jpeg" 
-                  alt="Dental Implant - Permanent tooth replacement"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-                <div className="hidden w-full h-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
-                  <FaTooth className="text-white text-4xl opacity-80" />
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-gray-800 mb-2">DENTAL IMPLANT</h3>
-                <p className="text-gray-600 text-sm">Permanent tooth replacement solutions</p>
-              </div>
-            </div>
-
-            {/* Service Image 5 - Cosmetic Dentistry */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="relative h-48 bg-gray-100">
-                <img 
-                  src="/images/services/service-5.jpeg" 
                   alt="Cosmetic Dentistry - Smile enhancement treatments"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -136,11 +114,11 @@ const Services = () => {
               </div>
             </div>
 
-            {/* Service Image 6 - Dental Braces */}
+            {/* Service Image 5 - Dental Braces */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="relative h-48 bg-gray-100">
                 <img 
-                  src="/images/services/service-6.jpeg" 
+                  src="/images/services/service-5.jpeg" 
                   alt="Dental Braces - Orthodontic treatment"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -155,6 +133,28 @@ const Services = () => {
               <div className="p-4">
                 <h3 className="font-semibold text-gray-800 mb-2">DENTAL BRACES</h3>
                 <p className="text-gray-600 text-sm">Straighten teeth with modern braces</p>
+              </div>
+            </div>
+
+            {/* Service Image 6 - Child Dentistry */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="relative h-48 bg-gray-100">
+                <img 
+                  src="/images/services/service-6.jpeg" 
+                  alt="Child Dentistry - Pediatric dental care"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="hidden w-full h-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
+                  <FaTooth className="text-white text-4xl opacity-80" />
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-800 mb-2">CHILD DENTISTRY</h3>
+                <p className="text-gray-600 text-sm">Gentle dental care for children</p>
               </div>
             </div>
 
@@ -224,12 +224,12 @@ const Services = () => {
               </div>
             </div>
 
-            {/* Service Image 10 - Treatment of Gum Diseases */}
+            {/* Service Image 10 - Dental Implant */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="relative h-48 bg-gray-100">
                 <img 
                   src="/images/services/service-10.jpeg" 
-                  alt="Treatment of Gum Diseases - Periodontal care"
+                  alt="Dental Implant - Permanent tooth replacement"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -241,8 +241,8 @@ const Services = () => {
                 </div>
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-gray-800 mb-2">TREATMENT OF GUM DISEASES</h3>
-                <p className="text-gray-600 text-sm">Advanced periodontal treatments</p>
+                <h3 className="font-semibold text-gray-800 mb-2">DENTAL IMPLANT</h3>
+                <p className="text-gray-600 text-sm">Permanent tooth replacement solutions</p>
               </div>
             </div>
           </div>
